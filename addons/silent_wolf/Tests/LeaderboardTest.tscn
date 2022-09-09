@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/GameTemplate/GUI/default_theme.tres" type="Theme" id=1]
+[ext_resource path="res://addons/silent_wolf/Tests/LeaderboardTest.gd" type="Script" id=2]
+[ext_resource path="res://Leaderboard/Leaderboard.tscn" type="PackedScene" id=3]
+
+[node name="Node" type="Control"]
+margin_right = -2426.88
+margin_bottom = -1244.52
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+script = ExtResource( 2 )
+
+[node name="Leaderboard" parent="." instance=ExtResource( 3 )]
+margin_left = 3.0
+margin_top = 2.0
+margin_right = 723.0
+margin_bottom = 407.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.1
+anchor_bottom = 0.1
+margin_left = 232.0
+margin_top = 127.0
+margin_right = 318.0
+margin_bottom = 179.0
+
+[node name="NewScore" type="Button" parent="VBoxContainer"]
+margin_right = 86.0
+margin_bottom = 24.0
+theme = ExtResource( 1 )
+text = "New"
+
+[node name="ResetScene" type="Button" parent="VBoxContainer"]
+margin_top = 28.0
+margin_right = 86.0
+margin_bottom = 52.0
+theme = ExtResource( 1 )
+text = "RestartScene"
+
+[connection signal="pressed" from="VBoxContainer/NewScore" to="." method="_on_NewScore_pressed"]
+[connection signal="pressed" from="VBoxContainer/ResetScene" to="." method="_on_ResetScene_pressed"]

@@ -1,0 +1,76 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Levels/Level.gd" type="Script" id=1]
+[ext_resource path="res://addons/GameTemplate/Assets/Fonts/pixellocale_16.tres" type="DynamicFont" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://Levels/player.gd" type="Script" id=4]
+[ext_resource path="res://addons/GameTemplate/GUI/default_theme.tres" type="Theme" id=5]
+
+[node name="Level" type="Node2D"]
+script = ExtResource( 1 )
+Next_Scene = "res://MainMenu/MainMenu.tscn"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0980392, 0.105882, 0.0941176, 1 )
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 41.0
+margin_top = -79.0
+margin_right = 149.0
+margin_bottom = -39.0
+custom_fonts/font = ExtResource( 2 )
+text = "GO BACK"
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 156.129, 131.574 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+script = ExtResource( 4 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchor_left = 0.046
+anchor_top = 0.046
+anchor_right = 0.046
+anchor_bottom = 0.046
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Tests" type="Label" parent="CanvasLayer/VBoxContainer"]
+margin_right = 71.0
+margin_bottom = 18.0
+text = "Tests"
+align = 1
+
+[node name="TestGlobalTimer" type="Button" parent="CanvasLayer/VBoxContainer"]
+margin_top = 22.0
+margin_right = 71.0
+margin_bottom = 46.0
+theme = ExtResource( 5 )
+text = "GlobalTimer"
+
+[node name="TestEnv" type="Button" parent="CanvasLayer/VBoxContainer"]
+margin_top = 50.0
+margin_right = 71.0
+margin_bottom = 74.0
+theme = ExtResource( 5 )
+text = "Env"
+
+[node name="TestHighScore" type="Button" parent="CanvasLayer/VBoxContainer"]
+margin_top = 78.0
+margin_right = 71.0
+margin_bottom = 102.0
+theme = ExtResource( 5 )
+text = "Highscores"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/TestGlobalTimer" to="." method="_on_TestGlobalTimer_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/TestEnv" to="." method="_on_TestEnv_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/TestHighScore" to="." method="_on_TestHighScore_pressed"]

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/GameTemplate/Assets/Fonts/pixellocale_16.tres" type="DynamicFont" id=1]
+[ext_resource path="res://addons/GameTemplate/GUI/default_theme.tres" type="Theme" id=2]
+
+[node name="SWButton" type="Button"]
+margin_right = 12.0
+margin_bottom = 20.0
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 1 )
+text = "Sample text"

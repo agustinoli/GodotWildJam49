@@ -1,0 +1,63 @@
+id,en,es
+Right,Right,Derecha
+Left,Left,Izquierda
+Up,Up,Arriba
+Down,Down,Abajo
+Jump,Jump,Saltar
+Shoot,Shoot,Disparar
+NEW_GAME,New game,Nuevo juego
+CONTINUE,Continue,Continuar
+RESUME,Resume,Reanudar
+RESTART,Restart,Reiniciar
+LEADERBOARD,Leaderboard,Clasificación
+LOGIN,Login,Ingresar
+LOGOUT,Log out,Cerrar Sesion
+REGISTER,Register,Registrarse
+WELCOME,Welcome,Bienvenid@
+OPTIONS,Options,Opciones
+CREDITS,Credits,Créditos
+GAME,Game,Juego
+MAIN_MENU,Main Menu,Menú principal
+BACK,Back,Atras
+EXIT,Exit,Salir
+PAUSE,Pause,Pausa
+DIFFICULTY,Difficulty,Dificultad
+PACIFIC,Pacific mode,Modo pacífico
+BLOOD,Blood/Gore,Sangre/Gore
+LOADING,Loading,Cargando
+RESOLUTION,Resolution,Resolución
+FULLSCREEN,Fullscreen window,Pantalla completa
+BORDERLESS,Borderless window,Pantalla sin bordes
+SCALE,Scale,Escalado
+VOLUME,Volume,Volumen
+MASTER,Master,General
+MUSIC,Music,Música
+SFX,Sounds,Efectos de Sonido
+CONTROLS,Controls,Controles
+HARD,Hard,Difícil
+NORMAL,Normal,Normal
+EASY,Easy,Fácil
+CREDITS,Credits,Créditos
+ACTIONS,Actions,Acciones
+KEYBOARD,Keyboard,Teclado
+GAMEPAD,Gamepad,Gamepad
+DEFAULT,Default,Defecto
+USE_NEW_CONTROLS,Use new control!,Usar nuevos controles!
+CANCEL,Cancel,Cancelar
+LANGUAGES,Languages,Idiomas
+BY,by,por
+PROGRAMMING,Programming,Programación
+GRAPHIC_ART,Graphic art,Arte gráfica
+SFX,Sound effects,Efectos de sonido
+TRANSLATES,Translates,Traducciones
+HISTORY,History,Historia
+TESTING,Testing,Testeo
+SPONSOR,Sponsor,Sponsor
+REVIEW,Review,Revisión
+USERNAME,Username,Usuario
+PASSWORD,Password,Contraseña
+CONFIRM,Confirm,Confirmar
+SUBMIT,Submit,Enviar
+SIGN UP,Sign Up,Registrarse
+LOADING_SCORES,Loading scores…,Cargando puntuaciones…
+NO_SCORES_YET,No scores yet!,Sin puntuaciones por el momento
