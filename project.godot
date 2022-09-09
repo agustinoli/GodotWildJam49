@@ -32,7 +32,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="GameTemplate"
+config/name="GodotWildJam49"
 run/main_scene="res://LaunchScene/LaunchScene.tscn"
 config/icon="res://icon.png"
 
