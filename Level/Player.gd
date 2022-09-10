@@ -20,5 +20,4 @@ func _physics_process(_delta: float) -> void:
 	if move_direction.x != 0 and move_direction.y != 0:
 		move_direction.y /= 2
 
-	print( position)
 	move_and_collide(move_direction * 2)
