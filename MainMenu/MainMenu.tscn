@@ -11,7 +11,7 @@ bg_color = Color( 0.0941176, 0.0784314, 0.145098, 1 )
 [node name="MainMenu" type="CanvasLayer"]
 layer = 0
 script = ExtResource( 3 )
-First_Level = "res://Levels/TestScene.tscn"
+First_Level = "res://Intro/Intro.tscn"
 
 [node name="BG" type="Panel" parent="."]
 pause_mode = 2
@@ -30,30 +30,30 @@ custom_constants/margin_bottom = 16
 [node name="VBoxMain" type="VBoxContainer" parent="BG/MarginContainer"]
 margin_left = 16.0
 margin_top = 16.0
-margin_right = 624.0
-margin_bottom = 344.0
+margin_right = 304.0
+margin_bottom = 164.0
 size_flags_vertical = 3
 
 [node name="CenterLogo" type="CenterContainer" parent="BG/MarginContainer/VBoxMain"]
-margin_right = 608.0
+margin_right = 288.0
 margin_bottom = 64.0
 
 [node name="Logo" type="TextureRect" parent="BG/MarginContainer/VBoxMain/CenterLogo"]
-margin_left = 272.0
-margin_right = 336.0
+margin_left = 112.0
+margin_right = 176.0
 margin_bottom = 64.0
 texture = ExtResource( 2 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="BG/MarginContainer/VBoxMain"]
 margin_top = 68.0
-margin_right = 608.0
-margin_bottom = 328.0
+margin_right = 288.0
+margin_bottom = 148.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="ButtonContainer" type="VBoxContainer" parent="BG/MarginContainer/VBoxMain/HBoxContainer"]
 margin_right = 51.0
-margin_bottom = 260.0
+margin_bottom = 80.0
 size_flags_vertical = 3
 custom_constants/separation = 1
 
@@ -81,8 +81,8 @@ text = "Exit"
 
 [node name="RightMargin" type="Control" parent="BG/MarginContainer/VBoxMain/HBoxContainer"]
 margin_left = 55.0
-margin_right = 608.0
-margin_bottom = 260.0
+margin_right = 213.0
+margin_bottom = 80.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 

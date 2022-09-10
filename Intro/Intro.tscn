@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Intro/Intro.gd" type="Script" id=1]
+
+[node name="Intro" type="Node"]
+script = ExtResource( 1 )
+next_scene = "res://Level/Level.tscn"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 320, 180 )
+color = Color( 0.329412, 0.215686, 0.215686, 1 )
+
+[node name="Message" type="Label" parent="."]
+margin_right = 320.0
+margin_bottom = 180.0
+align = 1
+valign = 1
