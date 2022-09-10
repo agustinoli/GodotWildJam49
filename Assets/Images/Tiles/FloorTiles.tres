@@ -1,0 +1,415 @@
+[gd_resource type="TileSet" load_steps=31 format=2]
+
+[ext_resource path="res://Assets/Images/Tiles/FloorTiles.png" type="Texture" id=1]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 13.1287, 2.69434, 18.5553, 2.69434, 21.4624, 4.24479, 22.4314, 6.76427, 18.1677, 9.67137, 13.3225, 9.08995, 10.0278, 6.18285, 11.5782, 4.05098 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 26.4795, 5.02001, 35.3946, 5.02001, 40.6273, 9.08995, 46.054, 11.2218, 48.7672, 12.7723, 48.5734, 17.8113, 41.5964, 23.6255, 31.3246, 24.9821, 21.6343, 23.2378, 15.6263, 18.7803, 14.0758, 15.098, 16.2077, 10.8342, 23.5724, 6.18285 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 15.8858, 0, 24.9947, 4.29788, 9.4902, 4.49168 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 0, 7.39879, 7.76783, 4.10408, 8.34925, 12.4378 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+points = PoolVector2Array( 24.0695, 11.6625, 24.2633, 2.74744, 31.8218, 7.20499 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+points = PoolVector2Array( 16.1234, 16, 0.231277, 6.51572, 7.98354, 2.83339, 16.511, 7.87236, 24.4571, 2.83339, 32, 6.70952 )
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
+points = PoolVector2Array( 16.6829, 7.87236, 8.34925, 3.22099, 15.5201, 0, 32, 8.45378, 14.5511, 16, 8.34925, 11.7485 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+points = PoolVector2Array( 23.8319, 3.41479, 16.0796, 7.09712, 24.0257, 11.9423, 16.0796, 16, 0, 8.84138, 16.2734, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+points = PoolVector2Array( 8.30545, 12.244, 8.11163, 4.10408, 25.1666, 3.52266, 25.748, 11.8563 )
+
+[sub_resource type="ConvexPolygonShape2D" id=22]
+points = PoolVector2Array( 15.8639, 0, 32, 7.89426, 24.3914, 11.9642, 8.11163, 3.63051 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
+points = PoolVector2Array( 23.6381, 3.63051, 8.32735, 12.158, 0, 7.11903, 15.692, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=24]
+points = PoolVector2Array( 0.209373, 7.70045, 7.38023, 2.85529, 23.66, 12.158, 14.1635, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+points = PoolVector2Array( 32, 7.31284, 14.7668, 15.2589, 8.37115, 11.3828, 24.4571, 3.63051 )
+
+[sub_resource type="ConvexPolygonShape2D" id=26]
+points = PoolVector2Array( 7.83021, 11.0811, 22.9471, 11.6625, 16.3577, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=27]
+points = PoolVector2Array( 8.21782, 11.7485, 0, 7.09714, 16.1639, 0, 32, 6.51572, 23.7224, 12.1361, 15.9701, 7.09714 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 9.72781, 12.6754, 26.7828, 3.56647, 32, 7.83022, 15.3482, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 5.24834, 4.5355, 21.9157, 13.4506, 15.3263, 16, 0, 8.02402 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 8.02402, 14.723, 0, 22.8629, 2.59743, 5.80787, 11.1249 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 14.7011, 0, 32, 6.66737, 25.3604, 11.1249, 8.30545, 3.56647 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 24.8447, 7.72236, 23.2943, 7.33475, 26.7828, 3.2648, 32, 8.30378, 26.9766, 11.0171, 23.2943, 7.52855 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 5.24834, 11.0171, 0, 9.079, 3.50409, 5.00906, 8.54305, 8.30378 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 7.55212, 4.04003, 16.0796, 0, 24.0257, 3.071, 11.6221, 6.75333 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 15.3482, 9.74638, 25.4261, 4.12598, 32, 8.00211, 15.542, 16, 0.231277, 7.22689, 4.49503, 4.70741 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 12.0316, 5.87024, 8.15545, 3.15695, 16.2953, 0, 32, 7.03308, 15.7139, 16, 10.0935, 12.4597, 19.9777, 7.6145 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 20.9248, 12.0721, 16.4672, 15.7544, 0, 7.42069, 15.8858, 0, 23.0567, 2.57553, 12.9787, 8.19592 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 11.794, 11.2109, 10.0497, 4.23383, 18.5772, 2.68339, 25.5542, 8.30378, 16.4453, 11.0171 )
+
+[sub_resource type="ConvexPolygonShape2D" id=28]
+points = PoolVector2Array( 31.8622, 7.03308, 24.6914, 10.9092, 18.102, 7.4207, 5.89214, 10.9092, 0, 7.22689, 16.1639, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=29]
+points = PoolVector2Array( 9.76827, 11.9861, 21.0091, 12.3737, 15.5825, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 11.9659, 8.40068, 11.3845, 7.23784, 11.3845, 4.71835, 15.6482, 4.33074, 18.1677, 6.075, 19.912, 8.20687, 16.811, 10.1449 )
+
+[resource]
+2/name = "IsometricTemplate993.png 2"
+2/texture = ExtResource( 1 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 160, 0, 32, 16 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 1 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "IsometricTemplate993.png 3"
+3/texture = ExtResource( 1 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 192, 0, 64, 32 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 2 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "IsometricTemplate993.png 4"
+4/texture = ExtResource( 1 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 48, 160, 48 )
+4/tile_mode = 1
+4/autotile/bitmask_mode = 1
+4/autotile/bitmask_flags = [ Vector2( 0, 0 ), 511, Vector2( 0, 1 ), 432, Vector2( 0, 2 ), 255, Vector2( 1, 0 ), 438, Vector2( 1, 1 ), 54, Vector2( 1, 2 ), 510, Vector2( 2, 0 ), 504, Vector2( 2, 1 ), 216, Vector2( 2, 2 ), 447, Vector2( 3, 0 ), 219, Vector2( 3, 1 ), 27, Vector2( 3, 2 ), 507, Vector2( 4, 0 ), 63, Vector2( 4, 1 ), 16 ]
+4/autotile/icon_coordinate = Vector2( 0, 0 )
+4/autotile/tile_size = Vector2( 32, 16 )
+4/autotile/spacing = 0
+4/autotile/occluder_map = [  ]
+4/autotile/navpoly_map = [  ]
+4/autotile/priority_map = [  ]
+4/autotile/z_index_map = [  ]
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 15 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 3, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 17 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 19 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 20 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 21 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 22 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 23 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 24 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 25 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 26 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 27 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "IsometricTemplate993.png 5"
+5/texture = ExtResource( 1 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 160, 48 )
+5/tile_mode = 1
+5/autotile/bitmask_mode = 1
+5/autotile/bitmask_flags = [ Vector2( 0, 0 ), 511, Vector2( 0, 1 ), 432, Vector2( 0, 2 ), 255, Vector2( 1, 0 ), 438, Vector2( 1, 1 ), 54, Vector2( 1, 2 ), 510, Vector2( 2, 0 ), 504, Vector2( 2, 1 ), 216, Vector2( 2, 2 ), 447, Vector2( 3, 0 ), 219, Vector2( 3, 1 ), 27, Vector2( 3, 2 ), 507, Vector2( 4, 0 ), 63, Vector2( 4, 1 ), 16 ]
+5/autotile/icon_coordinate = Vector2( 0, 0 )
+5/autotile/tile_size = Vector2( 32, 16 )
+5/autotile/spacing = 0
+5/autotile/occluder_map = [  ]
+5/autotile/navpoly_map = [  ]
+5/autotile/priority_map = [  ]
+5/autotile/z_index_map = [  ]
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 4 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 1, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 1, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 2, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 28 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 1 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 29 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "IsometricTemplate993.png 6"
+6/texture = ExtResource( 1 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 160, 16, 32, 16 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 3 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "IsometricTemplate993.png 7"
+7/texture = ExtResource( 1 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 160, 32, 32, 16 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "IsometricTemplate993.png 8"
+8/texture = ExtResource( 1 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 160, 48, 32, 16 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "IsometricTemplate993.png 9"
+9/texture = ExtResource( 1 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 160, 64, 32, 16 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "IsometricTemplate993.png 10"
+10/texture = ExtResource( 1 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 160, 80, 32, 16 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0

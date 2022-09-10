@@ -1,19 +1,33 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Intro/Intro.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Images/Tiles/FloorTiles.tres" type="TileSet" id=3]
 
 [node name="Intro" type="Node"]
 script = ExtResource( 1 )
 next_scene = "res://Level/Level.tscn"
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="BackGround" type="ColorRect" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 320, 180 )
-color = Color( 0.329412, 0.215686, 0.215686, 1 )
+color = Color( 0, 0, 0, 1 )
 
 [node name="Message" type="Label" parent="."]
 margin_right = 320.0
 margin_bottom = 180.0
 align = 1
 valign = 1
+
+[node name="MoonFloor" type="TileMap" parent="."]
+mode = 1
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 32, 16 )
+format = 1
+tile_data = PoolIntArray( -327664, 5, 65536, -327663, 5, 2, -327662, 5, 2, -327661, 5, 65538, -262128, 5, 65537, -262127, 5, 131074, -262126, 5, 0, -262125, 5, 131075, -262124, 5, 2, -262123, 5, 65538, -196591, 5, 1, -196590, 5, 0, -196589, 5, 0, -196588, 5, 0, -196587, 5, 131075, -196586, 5, 65538, -131056, 5, 65536, -131055, 5, 131073, -131054, 5, 0, -131053, 5, 0, -131052, 5, 0, -131051, 5, 0, -131050, 5, 131075, -131049, 5, 65538, -65520, 5, 1, -65519, 5, 0, -65518, 5, 0, -65517, 5, 0, -65516, 5, 0, -65515, 5, 0, -65514, 5, 0, -65513, 5, 131075, -65512, 5, 65538, 16, 5, 1, 17, 5, 0, 18, 5, 0, 19, 5, 0, 20, 5, 0, 21, 5, 0, 22, 5, 0, 23, 5, 0, 24, 5, 131075, 25, 5, 65538, 65552, 5, 1, 65553, 5, 0, 65554, 5, 0, 65555, 5, 0, 65556, 5, 0, 65557, 5, 0, 65558, 5, 0, 65559, 5, 0, 65560, 5, 131072, 65561, 5, 65539, 131088, 5, 1, 131089, 5, 0, 131090, 5, 0, 131091, 5, 0, 131092, 5, 0, 131093, 5, 0, 131094, 5, 0, 131095, 5, 0, 131096, 5, 3, 196624, 5, 65537, 196625, 5, 131074, 196626, 5, 0, 196627, 5, 0, 196628, 5, 0, 196629, 5, 0, 196630, 5, 0, 196631, 5, 0, 196632, 5, 3, 262161, 5, 65537, 262162, 5, 4, 262163, 5, 131074, 262164, 5, 0, 262165, 5, 131072, 262166, 5, 4, 262167, 5, 4, 262168, 5, 65539, 327699, 5, 1, 327700, 5, 0, 327701, 5, 3, 393235, 5, 65537, 393236, 5, 4, 393237, 5, 65539 )
+
+[node name="Player" type="Sprite" parent="."]
+position = Vector2( 277, 156 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
