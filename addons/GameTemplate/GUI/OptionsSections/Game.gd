@@ -2,6 +2,8 @@ extends VBoxContainer
 
 
 func _ready()->void:
+	Game.connect("NewGame", self, "on_new_game")
+	PauseMenu.connect("EndGame", self, "on_end_game")
 	MenuEvent.connect("Game", self, "on_show_game")
 	MenuEvent.Game = false
 	
@@ -45,3 +47,12 @@ func _on_Blood_toggled(button_pressed):
 
 func _on_Pacific_toggled(button_pressed):
 	Game.pacific_mode = button_pressed
+
+
+func on_new_game():
+	find_node("DifficultySelect").disabled = true
+
+
+func on_end_game():
+	find_node("DifficultySelect").disabled = false
+
