@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+signal EndGame
+
 var can_show: = false
 
 onready var resume: = find_node("Resume")
@@ -47,6 +49,7 @@ func _on_MainMenu_pressed()->void:
 	Game.emit_signal("ChangeScene", MainMenu)
 	show_pause_menu(false)
 	PauseMenu.can_show = false
+	emit_signal("EndGame")
 
 func _on_Exit_pressed()->void:
 	Game.emit_signal("Exit")
