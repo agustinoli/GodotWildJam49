@@ -1,0 +1,130 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://Assets/Images/Player/LeftDown.png" type="Texture" id=1]
+[ext_resource path="res://Player/Player.gd" type="Script" id=2]
+[ext_resource path="res://Player/MovePlayer.gd" type="Script" id=3]
+[ext_resource path="res://fsm/stateMachine.gd" type="Script" id=4]
+[ext_resource path="res://Player/IdlePlayer.gd" type="Script" id=5]
+[ext_resource path="res://Player/BuildPlayer.gd" type="Script" id=6]
+[ext_resource path="res://Assets/Images/Player/Right.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/Player/Left.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Images/Player/Down.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Images/Player/LeftUp.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Images/Player/RightDown.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/Player/RIghtUp.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Images/Player/Up.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Fonts/pixellocale_8.tres" type="DynamicFont" id=15]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 6.0
+height = 2.0
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 13 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 2 ) ],
+"loop": true,
+"name": "Down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": true,
+"name": "Left",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 5 ) ],
+"loop": true,
+"name": "LeftDown",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 6 ) ],
+"loop": true,
+"name": "LeftUp",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 7 ) ],
+"loop": true,
+"name": "Right",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": true,
+"name": "RightDown",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 9 ) ],
+"loop": true,
+"name": "RightUp",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 10 ) ],
+"loop": true,
+"name": "Up",
+"speed": 5.0
+} ]
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -9.53674e-07, 4.76837e-07 )
+frames = SubResource( 3 )
+animation = "RightUp"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="Label" type="Label" parent="Camera2D"]
+margin_left = -239.0
+margin_top = -77.0
+margin_right = 240.0
+margin_bottom = -26.0
+custom_fonts/font = ExtResource( 15 )
+align = 1
+
+[node name="StateMachine" type="Node2D" parent="."]
+script = ExtResource( 4 )
+initial_state = NodePath("Idle")
+
+[node name="Idle" type="Node2D" parent="StateMachine"]
+script = ExtResource( 5 )
+
+[node name="Build" type="Node2D" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="Move" type="Node2D" parent="StateMachine"]
+script = ExtResource( 3 )

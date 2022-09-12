@@ -38,7 +38,7 @@ size_flags_vertical = 3
 
 [node name="Resolution" type="Label" parent="HBoxContainer/Panel/VBoxContainer"]
 margin_right = 150.0
-margin_bottom = 26.0
+margin_bottom = 34.0
 size_flags_horizontal = 5
 size_flags_vertical = 1
 custom_fonts/font = ExtResource( 3 )
@@ -47,9 +47,9 @@ align = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Panel/VBoxContainer"]
 margin_left = 29.0
-margin_top = 30.0
+margin_top = 38.0
 margin_right = 121.0
-margin_bottom = 92.0
+margin_bottom = 100.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
@@ -129,7 +129,7 @@ __meta__ = {
 
 [node name="Volume" type="Label" parent="HBoxContainer/Panel2/VBoxContainer"]
 margin_right = 150.0
-margin_bottom = 26.0
+margin_bottom = 34.0
 size_flags_horizontal = 5
 size_flags_vertical = 1
 custom_fonts/font = ExtResource( 3 )
@@ -137,9 +137,9 @@ text = "Volume"
 align = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Panel2/VBoxContainer"]
-margin_top = 30.0
+margin_top = 38.0
 margin_right = 150.0
-margin_bottom = 134.0
+margin_bottom = 142.0
 custom_constants/margin_right = 4
 custom_constants/margin_left = 5
 
