@@ -1,19 +1,17 @@
 extends Node2D
+class_name BSOD
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var required_text
-
-
 var rng = RandomNumberGenerator.new()
+var player
+export onready var PENALTY_TIME = 2.0
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	rng.randomize()
-	required_text = "Value"+str(rng.randi_range(100,999))
-	$Target.set_text(required_text)
+	$Camera2D._set_current(true)
+	init()
+
+func set_player(_player : Player):
+	player = _player
 
 func _unhandled_input(event):
 	var user_input = $UserInput.get_text()
@@ -22,8 +20,34 @@ func _unhandled_input(event):
 		$UserInput.set_text(user_input)
 	elif event.is_pressed() and (event.scancode == KEY_ENTER or event.scancode == KEY_KP_ENTER):
 		if user_input == $Target.get_text():
-			print("ganaste")
+			good()
 		else:
-			print("algo esta mal")
+			bad()
 	elif event.is_pressed():
 		$UserInput.set_text(user_input+ char(event.unicode))
+
+func init():
+	rng.randomize()
+	required_text = str(rng.randi_range(1000,9999))
+	$Target.set_text(required_text)
+	self.set_process_unhandled_input(true)
+
+func good():
+	$Screen.set_self_modulate(Color(0,1,0,1))
+	GlobalTimer.add_timeout(self,"timeout_on_good",PENALTY_TIME)
+
+func bad():
+	self.set_process_unhandled_input(false)
+	$Screen.set_self_modulate(Color(1,0,0,1))
+	GlobalTimer.add_timeout(self,"timeout_on_bad",PENALTY_TIME * 3)
+
+func timeout_on_good():
+	self.get_parent().remove_child(self)
+	player.get_camera()._set_current(true)
+	player.set_recursive_process_input(true)
+	queue_free()
+
+func timeout_on_bad():
+	init()
+	$UserInput.set_text("")
+	$Screen.set_self_modulate(Color(1,1,1,1))

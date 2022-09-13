@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets/Images/Tiles/FloorTiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://BlueScreen/Trigger.tscn" type="PackedScene" id=3]
 
 [node name="Level" type="Node2D"]
 
@@ -31,3 +32,6 @@ tile_data = PoolIntArray( -4980529, 4, 65536, -4980528, 4, 65538, -4914993, 4, 1
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2005, 2241 )
+
+[node name="Trigger" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2097, 2174 )
