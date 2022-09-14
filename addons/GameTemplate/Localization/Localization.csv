@@ -62,6 +62,7 @@ SIGN UP,Sign Up,Registrarse
 LOADING_SCORES,Loading scores…,Cargando puntuaciones…
 NO_SCORES_YET,No scores yet!,Sin puntuaciones por el momento
 PRESS,Press,Presiona
-INTRO-1,First dialog from intro scene,Primer dialogo del intro
+INTRO-1,First dialog from intro scene,Primer diálogo del intro
 INTRO-2,Now the second one,Ahora el segundo
-INTRO-3,And the last one...,Y el ultimo...
+INTRO-3,And the last one...,Y el último...
+TASK_BLUE_SCREEN,Enter the following code:,Ingresa el siguiente código:
