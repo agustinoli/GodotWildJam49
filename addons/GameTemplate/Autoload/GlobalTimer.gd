@@ -10,7 +10,9 @@ extends Node2D
 # oneshot: true for only one timeout triggered
 #
 # Returns a reference to the timer
-func add_timeout(node : Node, function : String, timeout : int, autostart : bool, oneshot : bool)->Timer:
+
+func add_timeout(node : Node, function : String ,timeout : float, 
+		autostart : bool = true , oneshot : bool = true)->Timer:
 	var timer = null
 	if node == null:
 		print_debug("GlobalTimer: add_timeout() called with empty node")
