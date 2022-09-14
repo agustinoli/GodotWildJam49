@@ -28,7 +28,7 @@ func _unhandled_input(event):
 
 func init():
 	rng.randomize()
-	required_text = str(rng.randi_range(1000,9999))
+	required_text = str(rng.randi_range(1, pow(10,Game.difficulty+2)-1 ) )
 	$Target.set_text(required_text)
 	self.set_process_unhandled_input(true)
 
@@ -39,7 +39,7 @@ func good():
 func bad():
 	self.set_process_unhandled_input(false)
 	$Screen.set_self_modulate(Color(1,0,0,1))
-	GlobalTimer.add_timeout(self,"timeout_on_bad",PENALTY_TIME * 3)
+	GlobalTimer.add_timeout(self,"timeout_on_bad",PENALTY_TIME * Game.difficulty)
 
 func timeout_on_good():
 	self.get_parent().remove_child(self)

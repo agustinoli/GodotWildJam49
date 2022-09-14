@@ -31,13 +31,14 @@ func retranslate()->void:
 	
 	var dif_select = find_node("DifficultySelect")
 	dif_select.clear()
-	dif_select.add_item(tr("HARD"))
-	dif_select.add_item(tr("NORMAL"))
 	dif_select.add_item(tr("EASY"))
+	dif_select.add_item(tr("NORMAL"))
+	dif_select.add_item(tr("HARD"))
 
 
 
 func _on_DifficultySelect_item_selected(index):
+	print("pase por _on_DifficultySelect_item_selected con index: ",index)
 	Game.difficulty = index
 
 
