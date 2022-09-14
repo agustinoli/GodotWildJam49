@@ -1,9 +1,12 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/Images/Tiles/FloorTiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://BlueScreen/Trigger.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Level/Level.gd" type="Script" id=4]
 
 [node name="Level" type="Node2D"]
+script = ExtResource( 4 )
 
 [node name="BackGround" type="ColorRect" parent="."]
 margin_left = 496.0
@@ -31,3 +34,32 @@ tile_data = PoolIntArray( -4980529, 4, 65536, -4980528, 4, 65538, -4914993, 4, 1
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2005, 2241 )
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Trigger" parent="Node" instance=ExtResource( 3 )]
+position = Vector2( 4177, 1521 )
+
+[node name="Trigger2" parent="Node" instance=ExtResource( 3 )]
+position = Vector2( 3255, 2075 )
+
+[node name="Trigger3" parent="Node" instance=ExtResource( 3 )]
+position = Vector2( 3172, 2436 )
+
+[node name="Trigger4" parent="Node" instance=ExtResource( 3 )]
+position = Vector2( 4602, 2511 )
+
+[node name="Trigger5" parent="Node" instance=ExtResource( 3 )]
+position = Vector2( 2262, 1466 )
+
+[node name="Trigger6" parent="Node" instance=ExtResource( 3 )]
+position = Vector2( 2097, 2174 )
+
+[node name="Trigger9" parent="Node" instance=ExtResource( 3 )]
+position = Vector2( 2027, 2168 )
+
+[node name="Trigger7" parent="Node" instance=ExtResource( 3 )]
+position = Vector2( 2601.4, 1945.25 )
+
+[node name="Trigger8" parent="Node" instance=ExtResource( 3 )]
+position = Vector2( 2474, 1887 )
