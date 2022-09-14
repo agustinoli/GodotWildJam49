@@ -54,13 +54,5 @@ func on_Exit()->void:
 	get_tree().quit()
 
 
-func on_robot_part_picked(part):
-	match part:
-		"RobotHead":
-			print("RobotHead: insert new unstability")
-		"RobotWheel":
-			print("RobotWheel: insert new unstability")
-		"RobotArm":
-			print("RobotArm: insert new unstability")
-		"RobotBody":
-			print("RobotBody: insert new unstability")
+func on_robot_part_picked(part_name):
+	print(part_name)
