@@ -61,8 +61,8 @@ SUBMIT,Submit,Enviar
 SIGN UP,Sign Up,Registrarse
 LOADING_SCORES,Loading scores…,Cargando puntuaciones…
 NO_SCORES_YET,No scores yet!,Sin puntuaciones por el momento
+INTRO-1,"Back in 2022 year, B.O.B. the robot was sended\nto the Moon with the purpose of terraforming it,\nbut contact was lost.","En el año 2022 el robot B.O.B. fue desplegado\nen la Luna con propósito de terraformarla.\nPero se perdió todo contacto con él."
+INTRO-2,"The information that B.O.B. has gathered is\ncrutial to know humanity's chances of being established\nin the Moon, due to the inminent end of our planet, the Earth.\nThat's way the robot L.A.R.R.Y. is being sended\nto save B.O.B. or, at least, it's information...","La información que B.O.B. pudo conseguir\nes crucial para saber las chances de la humanidad de establecerse\nen la Luna debido al poco tiempo que le queda a la Tierra.\nEs por ello que L.A.R.R.Y. fue desplegado para encontrar\na B.O.B. o por lo menos lo que sabía…"
+INTRO-3,"L.A.R.R.Y. unit, launched. Target: localize\nand recover B.O.B.'s parts as much as possible.\nLimitation: There's not enough fuel. In five minutes, our\nspaceship will come back for L.A.R.R.Y. Good luck.","Unidad L.A.R.R.Y. desplegada. Objetivo: localizar y recuperar\nla mayor cantidad de piezas de B.O.B. posibles.\nLimitación: No hay suficiente combustible. En 5 minutos la nave\nrecuperará a L.A.R.R.Y con todo lo que haya obtenido.\nBuena suerte."
 PRESS,Press,Presiona
-INTRO-1,First dialog from intro scene,Primer diálogo del intro
-INTRO-2,Now the second one,Ahora el segundo
-INTRO-3,And the last one...,Y el último...
 TASK_BLUE_SCREEN,Enter the following code:,Ingresa el siguiente código:
