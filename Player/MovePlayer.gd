@@ -35,10 +35,13 @@ func physics_update(_delta: float) -> void:
 	var RIGHT = Input.is_action_pressed("Right")
 	var UP = Input.is_action_pressed("Up")
 	var DOWN = Input.is_action_pressed("Down")
-
-	move_direction.x = int(RIGHT) - int(LEFT)
-	move_direction.y = int(DOWN) - int(UP)
 	
+	if Game.switched:
+		move_direction.x = -int(RIGHT) + int(LEFT)
+		move_direction.y = -int(DOWN) + int(UP)
+	else:
+		move_direction.x = int(RIGHT) - int(LEFT)
+		move_direction.y = int(DOWN) - int(UP)
 	# Si va en diagonal, velocidad vertical disminuida
 	if move_direction.x != 0 and move_direction.y != 0:
 		move_direction.y /= 2
