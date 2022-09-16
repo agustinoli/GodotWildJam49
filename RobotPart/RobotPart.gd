@@ -9,6 +9,8 @@ func _ready():
 	key_name = InputMap.get_action_list("ui_accept")[0].as_text()
 	timer = GlobalTimer.add_timeout(self, "modulate_sprite", 0.5, false, false)
 	$Label.text = ""
+	$Area2D/Sprite.texture = load(str("res://Assets/Images/RobotParts/", self.get_name(), ".png"))
+	$Area2D/Sprite.scale = Vector2(2, 2)
 
 
 func _process(_delta):
