@@ -116,6 +116,8 @@ margin_bottom = -26.0
 custom_fonts/font = ExtResource( 15 )
 align = 1
 
+[node name="CanvasModulate" type="CanvasModulate" parent="Camera2D"]
+
 [node name="StateMachine" type="Node2D" parent="."]
 script = ExtResource( 4 )
 initial_state = NodePath("Idle")

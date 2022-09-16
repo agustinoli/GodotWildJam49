@@ -57,6 +57,15 @@ func _process(_delta):
 		$Camera2D.set_zoom(Vector2(p_zoom,p_zoom))
 
 
+func blackout():
+	var tween = create_tween()
+	tween.tween_property($Camera2D/CanvasModulate, "color", Color(0,1,1,1),2)
+	GlobalTimer.add_timeout(self,"_on_blackout_timeout",3)
+
+func _on_blackout_timeout():
+	var tween = create_tween()
+	tween.tween_property($Camera2D/CanvasModulate, "color", Color(1,1,1,1),2)
+
 func set_recursive_process_input(state : bool):
 	self.set_physics_process(state)
 	$StateMachine.set_physics_process(state)
