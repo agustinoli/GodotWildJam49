@@ -6,6 +6,7 @@
 [ext_resource path="res://addons/GameTemplate/Assets/Fonts/pixellocale_16.tres" type="DynamicFont" id=4]
 
 [node name="BlueScreen" type="Node2D"]
+z_index = 10
 script = ExtResource( 3 )
 
 [node name="Screen" type="TextureRect" parent="."]
