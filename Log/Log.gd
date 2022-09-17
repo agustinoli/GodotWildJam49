@@ -21,6 +21,7 @@ func _input(event):
 func next():
 	self.get_parent().log_active = true
 	message_index += 1
+	SfxManager.play("Piece"+str(message_index))
 	hold = true
 	find_node("Message").text = tr(str("LOG-", message_index))
 	self.visible = true
