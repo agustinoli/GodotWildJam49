@@ -55,6 +55,3 @@ func on_Exit()->void:
 		return
 	get_tree().quit()
 
-
-func on_robot_part_picked(part_name):
-	print(part_name)

@@ -16,7 +16,7 @@ func _ready():
 func _process(_delta):
 	if player_inside and Input.is_action_just_pressed("ui_accept"):
 		GlobalTimer.delete_timeout(timer)
-		Game.on_robot_part_picked(self.get_name())
+		get_parent().get_parent().part_picked()
 		self.disconnect("body_exited", self, "_on_RobotPart_body_exited") # Debido a un bugsito
 		queue_free()
 

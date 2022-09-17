@@ -28,3 +28,7 @@ func activate_blackout():
 func activate_switch():
 	GlobalTimer.add_timeout(self,"activate_switch",rand_range(1,10),true)
 	print("switch: ",OS.get_time())
+
+
+func part_picked():
+	$Player.next_log()

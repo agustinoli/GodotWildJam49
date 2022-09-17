@@ -29,6 +29,9 @@ func fsm_update(_delta: float) -> void:
 
 # Virtual function. Corresponds to the `_physics_process()` callback.
 func physics_update(_delta: float) -> void:
+	if player.log_active:
+		return
+		
 	var move_direction = Vector2()
 
 	var LEFT = Input.is_action_pressed("Left")

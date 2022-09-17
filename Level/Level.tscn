@@ -65,25 +65,25 @@ position = Vector2( 2474, 1887 )
 [node name="Parts" type="Node" parent="."]
 
 [node name="Part1" parent="Parts" instance=ExtResource( 5 )]
-position = Vector2( 3889, 2537 )
+position = Vector2( 3137, 2175 )
 
 [node name="Part2" parent="Parts" instance=ExtResource( 5 )]
-position = Vector2( 3005, 2564 )
+position = Vector2( 3222, 1469 )
 
 [node name="Part3" parent="Parts" instance=ExtResource( 5 )]
-position = Vector2( 4671, 2703 )
+position = Vector2( 4528, 1120 )
 
 [node name="Part4" parent="Parts" instance=ExtResource( 5 )]
-position = Vector2( 2225, 1379 )
+position = Vector2( 2199, 1354 )
 
 [node name="Part5" parent="Parts" instance=ExtResource( 5 )]
-position = Vector2( 4511, 1106 )
+position = Vector2( 4053, 3255 )
 
 [node name="Part6" parent="Parts" instance=ExtResource( 5 )]
-position = Vector2( 3705, 1533 )
+position = Vector2( 3895, 2520 )
 
 [node name="Part7" parent="Parts" instance=ExtResource( 5 )]
-position = Vector2( 2530, 1923 )
+position = Vector2( 2184, 2251 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2005, 2241 )
+position = Vector2( 2005, 2260 )
