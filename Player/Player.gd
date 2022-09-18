@@ -79,5 +79,8 @@ func parse_input():
 	pass
 
 
+func get_audio_stream():
+	return $AudioStreamPlayer
+
 func next_log():
 	$Log.next()
