@@ -45,7 +45,7 @@ func get_animationSprite () -> Node:
 
 
 func _ready():
-	pass
+	find_node("Log").init()
 
 
 func _process(_delta):
