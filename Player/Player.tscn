@@ -133,5 +133,6 @@ script = ExtResource( 6 )
 script = ExtResource( 3 )
 
 [node name="Log" parent="." instance=ExtResource( 7 )]
+visible = false
 position = Vector2( -150, -80 )
 z_index = 5

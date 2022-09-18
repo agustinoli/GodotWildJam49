@@ -39,6 +39,7 @@ rect_min_size = Vector2( 290, 105 )
 text = "I'm a log"
 align = 1
 valign = 1
+autowrap = true
 
 [node name="Exit" type="Label" parent="Black/Blue/VBoxContainer"]
 margin_top = 133.0

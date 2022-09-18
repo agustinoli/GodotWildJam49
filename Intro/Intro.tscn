@@ -31,3 +31,4 @@ margin_right = 320.0
 margin_bottom = 180.0
 align = 1
 valign = 1
+autowrap = true
