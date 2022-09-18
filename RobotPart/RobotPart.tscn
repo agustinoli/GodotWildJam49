@@ -35,5 +35,7 @@ text = "Press ENTER"
 align = 1
 valign = 1
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
 [connection signal="body_entered" from="." to="." method="_on_RobotPart_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_RobotPart_body_exited"]
