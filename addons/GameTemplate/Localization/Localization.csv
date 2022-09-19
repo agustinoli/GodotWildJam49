@@ -57,13 +57,15 @@ SUBMIT,Submit,Enviar
 SIGN UP,Sign Up,Registrarse
 LOADING_SCORES,Loading scores…,Cargando puntuaciones…
 NO_SCORES_YET,No scores yet!,Sin puntuaciones por el momento
-INTRO-1,"Back in 2022 year, B.O.B. the robot was sended\nto the Moon with the purpose of terraforming it,\nbut contact was lost.","En el año 2022 el robot B.O.B. fue desplegado\nen la Luna con propósito de terraformarla.\nPero se perdió todo contacto con él."
-INTRO-2,"The information that B.O.B. has gathered is\ncrutial to know humanity's chances of being established\nin the Moon, due to the inminent end of our planet, the Earth.\nThat's way the robot L.A.R.R.Y. is being sended\nto save B.O.B. or, at least, it's information...","La información que B.O.B. pudo conseguir\nes crucial para saber las chances de la humanidad de establecerse\nen la Luna debido al poco tiempo que le queda a la Tierra.\nEs por ello que L.A.R.R.Y. fue desplegado para encontrar\na B.O.B. o por lo menos lo que sabía…"
-INTRO-3,"L.A.R.R.Y. unit, launched. Target: localize\nand recover B.O.B.'s parts as much as possible.\nLimitation: There's not enough fuel. In five minutes, our\nspaceship will come back for L.A.R.R.Y. Good luck.","Unidad L.A.R.R.Y. desplegada. Objetivo: localizar y recuperar\nla mayor cantidad de piezas de B.O.B. posibles.\nLimitación: No hay suficiente combustible. En 5 minutos la nave\nrecuperará a L.A.R.R.Y con todo lo que haya obtenido.\nBuena suerte."
+INTRO-1,"Back in 2022 year, B.O.B. the robot was sended\nto the Moon with the purpose of terraforming it,\nbut contact was lost.","En el año 2022, el robot B.O.B. fue desplegado\nen la Luna con el propósito de terraformarla.\nLamentablemente, se perdió todo contacto con él."
+INTRO-2,"The information that B.O.B. has gathered is\ncrutial to know humanity's chances of being established\nin the Moon, due to the inminent end of our planet, the Earth.","La información que B.O.B. pudo conseguir\nes crucial para saber las chances de la humanidad de establecerse\nen la Luna debido al poco tiempo que le queda a la Tierra."
+INTRO-3,"That's way the robot L.A.R.R.Y. is being sended\nto save B.O.B. or, at least, it's information...","Es por ello que L.A.R.R.Y., un robot más avanzado, fue desplegado\npara encontrar a B.O.B., o al menos lo que éste sabía…"
 PRESS,Press,Presiona
 TASK_BLUE_SCREEN,Enter the following code:,Ingresa el siguiente código:
 LOG-TITLE,"You've found a log record from B.O.B !","Has encontrado un archivo de B.O.B !"
 LOG-EXIT,"Press any key...","Presiona cualquier tecla..."
+LOG-INIT,"Target: localize\nand recover B.O.B.'s parts as much as possible.\nLimitation: There's not enough fuel. In five minutes, our\nspaceship will come back for L.A.R.R.Y. Good luck.","Objetivo: localizar y recuperar la mayor cantidad de piezas\nde B.O.B. posibles. Limitación: No hay suficiente\ncombustible, en 5 minutos la nave recuperará a L.A.R.R.Y\ncon todo lo que haya obtenido. Buena suerte."
+LOG-INIT-TITLE,"L.A.R.R.Y. unit, launched","Unidad L.A.R.R.Y. desplegada"
 LOG-1,"Traducime","B.O.B. llegó hace años e hizo un barrido inicial, descubriendo\nque podía colocar los suministros para empezar\nla tarea, pero hizo un gran descubrimiento…"
 LOG-2,"Traducime","B.O.B. Descubrió formas de vida vegetal debajo de la\nsuperficie, las cuales reaccionaron con la electricidad,\nprovocando un aumento enérgico en el crecimiento vegetal\nsobre la Luna, desencadenando movimientos del piso que\ndañaron gran parte de los equipos y no parece ser lo único…"
 LOG-3,"No information...","Sin información..."
