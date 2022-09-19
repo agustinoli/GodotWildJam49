@@ -60,12 +60,13 @@ NO_SCORES_YET,No scores yet!,Sin puntuaciones por el momento
 INTRO-1,"Back in 2022 year, B.O.B. the robot was sent to the Moon with the purpose of terraforming it, but contact was lost.","En el año 2022 el robot B.O.B. fue desplegado en la Luna con propósito de terraformarla. Pero se perdió todo contacto con él."
 INTRO-2,"The information that B.O.B. had gathered is crutial to know humanity's chances of being established in the Moon, due to the inminent end of our planet, the Earth.","La información que B.O.B. pudo conseguir es crucial para saber las chances de la humanidad de establecerse en la Luna debido al poco tiempo que le queda a la Tierra."
 INTRO-3,"That's why the robot L.A.R.R.Y. is being sent to save B.O.B. or, at least, it's information...","Es por ello que L.A.R.R.Y. fue desplegado para encontrar a B.O.B. o por lo menos lo que sabía…"
-INTRO-4,"L.A.R.R.Y. unit, launched. Target: localizeand recover B.O.B.'s parts as much as possible. Limitation: There's not enough fuel.","Unidad L.A.R.R.Y. desplegada. Objetivo: localizar y recuperarla mayor cantidad de piezas de B.O.B. posibles.Limitación: No hay suficiente combustible."
+INTRO-4,"L.A.R.R.Y. unit, launched. Target: localize and recover B.O.B.'s parts as much as possible. Limitation: There's not enough fuel.","Unidad L.A.R.R.Y. desplegada. Objetivo: localizar y recuperarla mayor cantidad de piezas de B.O.B. posibles.Limitación: No hay suficiente combustible."
 INTRO-5,"In five minutes, our spaceship will come back for L.A.R.R.Y. Good luck."," En 5 minutos la nave recuperará a L.A.R.R.Y con todo lo que haya obtenido. Buena suerte."
 PRESS,Press,Presiona
 TASK_BLUE_SCREEN,"Enter the following code:","Ingresa el siguiente código:"
 LOG-TITLE,"You've found a log record from B.O.B !","Has encontrado un archivo de B.O.B !"
 LOG-EXIT,"Press any key...","Presiona cualquier tecla..."
+
 LOG-1,"B.O.B. came years ago and did an initial scan, finding that he could gather the supplies for the task, but he made a great discovery.","B.O.B. llegó hace años e hizo un barrido inicial, descubriendo que podía colocar los suministros para empezarla tarea, pero hizo un gran descubrimiento…"
 LOG-2,"B.O.B. found vegetable-like life forms beneath the surface of the Moon, which reacted with the electricity, causing a burst of the vegetal growth, triggering floor movements that damaged most of equipment, but then there's more... ","B.O.B. descubrió formas de vida vegetal debajo de la superficie, las cuales reaccionaron con la electricidad,provocando un aumento enérgico en el crecimiento vegetal sobre la Luna, desencadenando movimientos del piso que dañaron gran parte de los equipos y no parece ser lo único…"
 LOG-3,"No information...","Sin información..."

@@ -37,7 +37,8 @@ func good():
 	GlobalTimer.add_timeout(self,"timeout_on_good",PENALTY_TIME)
 
 func bad():
-	self.set_process_unhandled_input(false)
+	self.set_process_unhandled_input(false)	
+	SfxManager.play("BSOD"+ str( randi()%6 + 1 ) )
 	$Screen.set_self_modulate(Color(1,0,0,1))
 	GlobalTimer.add_timeout(self,"timeout_on_bad",PENALTY_TIME * Game.difficulty)
 
