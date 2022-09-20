@@ -12,7 +12,8 @@ func _ready():
 
 func _input(event):
 	if event.is_pressed():
-		next_msg()
+		if next_msg():
+			return
 		timer.stop()
 		timer.start()
 
@@ -25,6 +26,8 @@ func next_msg():
 	if trans_key == trans_val:
 		GlobalTimer.delete_timeout(timer)
 		Game.emit_signal("ChangeScene",next_scene)
+		return true
 	else:
 		$Message.text = trans_val
+		return false
 
