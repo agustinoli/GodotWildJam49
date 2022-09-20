@@ -13,6 +13,8 @@ func _ready():
 func _input(event):
 	if event.is_pressed():
 		next_msg()
+		timer.stop()
+		timer.start()
 
 
 func next_msg():

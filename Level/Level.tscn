@@ -1,20 +1,133 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/Images/Tiles/FloorTiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://BlueScreen/Trigger.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Level/Level.gd" type="Script" id=4]
 [ext_resource path="res://RobotPart/RobotPart.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/Background/background.jpg" type="Texture" id=6]
+[ext_resource path="res://Star/Star.tscn" type="PackedScene" id=7]
 
 [node name="Level" type="Node2D"]
 script = ExtResource( 4 )
 
-[node name="BackGround" type="ColorRect" parent="."]
+[node name="BackGround" type="TextureRect" parent="."]
 margin_left = 513.0
 margin_top = 473.0
 margin_right = 6869.0
 margin_bottom = 4061.0
-color = Color( 0, 0, 0, 1 )
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 2
+
+[node name="Stars" type="Node2D" parent="BackGround"]
+
+[node name="Star" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 1722, 1898 )
+
+[node name="Star2" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 2043, 1639 )
+
+[node name="Star3" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 1427, 932 )
+
+[node name="Star10" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 2031, 818 )
+
+[node name="Star11" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 2312, 1227 )
+
+[node name="Star12" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 1784, 1222 )
+
+[node name="Star4" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 1301, 1762 )
+
+[node name="Star9" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 1532, 1536 )
+
+[node name="Star5" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3012, 1385 )
+
+[node name="Star13" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3497, 1385 )
+
+[node name="Star14" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3779, 1721 )
+
+[node name="Star15" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3803, 2188 )
+
+[node name="Star16" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3330, 2188 )
+
+[node name="Star17" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3168, 1930 )
+
+[node name="Star18" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3048, 1648 )
+
+[node name="Star19" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 2275, 1852 )
+
+[node name="Star20" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 2377, 2236 )
+
+[node name="Star21" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 2671, 2494 )
+
+[node name="Star22" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 2929, 2794 )
+
+[node name="Star23" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3313, 2938 )
+
+[node name="Star24" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3786, 2860 )
+
+[node name="Star25" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3384, 2578 )
+
+[node name="Star26" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3066, 2374 )
+
+[node name="Star27" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 4205, 2674 )
+
+[node name="Star28" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 4361, 2356 )
+
+[node name="Star29" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 4319, 1996 )
+
+[node name="Star30" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 4271, 1606 )
+
+[node name="Star31" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 4301, 1258 )
+
+[node name="Star32" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 4271, 844 )
+
+[node name="Star33" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 4013, 508 )
+
+[node name="Star34" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3635, 700 )
+
+[node name="Star35" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 3287, 796 )
+
+[node name="Star6" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 2561, 1517 )
+
+[node name="Star7" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 2519, 781 )
+
+[node name="Star8" parent="BackGround/Stars" instance=ExtResource( 7 )]
+position = Vector2( 2961, 907 )
+
+[node name="Starts" type="Node" parent="."]
 
 [node name="MoonFloor" type="TileMap" parent="."]
 position = Vector2( -2, -1 )
@@ -45,13 +158,10 @@ position = Vector2( 3255, 2075 )
 position = Vector2( 3172, 2436 )
 
 [node name="Trigger4" parent="Triggers" instance=ExtResource( 3 )]
-position = Vector2( 4602, 2511 )
+position = Vector2( 4642, 2511 )
 
 [node name="Trigger5" parent="Triggers" instance=ExtResource( 3 )]
 position = Vector2( 2262, 1466 )
-
-[node name="Trigger6" parent="Triggers" instance=ExtResource( 3 )]
-position = Vector2( 2097, 2174 )
 
 [node name="Trigger9" parent="Triggers" instance=ExtResource( 3 )]
 position = Vector2( 2027, 2168 )
@@ -71,7 +181,7 @@ position = Vector2( 3137, 2175 )
 position = Vector2( 3222, 1469 )
 
 [node name="Part3" parent="Parts" instance=ExtResource( 5 )]
-position = Vector2( 4528, 1120 )
+position = Vector2( 4543, 1141 )
 
 [node name="Part4" parent="Parts" instance=ExtResource( 5 )]
 position = Vector2( 2199, 1354 )
