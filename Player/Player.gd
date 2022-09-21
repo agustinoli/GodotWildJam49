@@ -64,9 +64,11 @@ func blackout():
 	tween.tween_property($Camera2D/CanvasModulate, "color", Color(0,1,1,1),2)
 	GlobalTimer.add_timeout(self,"_on_blackout_timeout",3)
 
+
 func _on_blackout_timeout():
 	var tween = create_tween()
 	tween.tween_property($Camera2D/CanvasModulate, "color", Color(1,1,1,1),2)
+
 
 func set_recursive_process_input(state : bool):
 	self.set_physics_process(state)
@@ -75,6 +77,7 @@ func set_recursive_process_input(state : bool):
 	$StateMachine/Idle.set_physics_process(state)
 	$StateMachine/Move.set_physics_process(state)
 
+
 func parse_input():
 	pass
 
@@ -82,5 +85,10 @@ func parse_input():
 func get_audio_stream():
 	return $AudioStreamPlayer
 
+
 func next_log():
 	$Log.next()
+
+
+func recieve_hit():
+	print("auch! maybe add some inestability")
