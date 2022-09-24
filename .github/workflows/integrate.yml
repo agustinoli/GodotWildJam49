@@ -46,26 +46,6 @@ jobs:
         run: ls -R
 
       # Publish exported artifacts to Itch.io
-      - name: publish windows build
-        uses: josephbmanley/butler-publish-itchio-action@master
-        env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-          CHANNEL: windows
-          ITCH_GAME: ${{ secrets.ITCH_GAME }}
-          ITCH_USER: ${{ secrets.ITCH_USER }}
-          PACKAGE: ./artifact/windows.zip
-
-      # Publish exported artifacts to Itch.io
-      - name: publish linux build
-        uses: josephbmanley/butler-publish-itchio-action@master
-        env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-          CHANNEL: linux
-          ITCH_GAME: ${{ secrets.ITCH_GAME }}
-          ITCH_USER: ${{ secrets.ITCH_USER }}
-          PACKAGE: ./artifact/linux.zip
-
-      # Publish exported artifacts to Itch.io
       - name: publish html5 build
         uses: josephbmanley/butler-publish-itchio-action@master
         env:
@@ -74,13 +54,3 @@ jobs:
           ITCH_GAME: ${{ secrets.ITCH_GAME }}
           ITCH_USER: ${{ secrets.ITCH_USER }}
           PACKAGE: ./artifact/html.zip
-
-      # Publish exported artifacts to Itch.io
-      - name: publish mac build
-        uses: josephbmanley/butler-publish-itchio-action@master
-        env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-          CHANNEL: mac
-          ITCH_GAME: ${{ secrets.ITCH_GAME }}
-          ITCH_USER: ${{ secrets.ITCH_USER }}
-          PACKAGE: ./artifact/mac.zip
