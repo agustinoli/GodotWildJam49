@@ -43,7 +43,6 @@ func time_over():
 
 
 func select_ending()-> String:
-	Game.picked_logs = 7
 	match Game.picked_logs:
 		7:
 			return "res://Outro/VeryGoodOutro.tscn"
