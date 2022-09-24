@@ -4,7 +4,7 @@ export (String, FILE, "*.tscn") var Next_Scene: String
 var timer
 
 func _ready()->void:
-	timer = GlobalTimer.add_timeout(self,"time_over",30)
+	timer = GlobalTimer.add_timeout(self,"time_over",120)
 	Hud.set_timer(str(int(timer.get_time_left())))
 	Hud.set_visible(false)
 	PauseMenu.can_show = true	
@@ -38,13 +38,29 @@ func activate_switch():
 	SfxManager.play("SwitchControls")	
 
 
-func time_over():	
+func time_over():
 	Game.emit_signal("ChangeScene",select_ending())
 
 
 func select_ending()-> String:
-#	Calculates proper ending given the parameters 
-#	and returns the string to the packedscene
+	match Game.picked_logs:
+		7:
+			return "res://Outro/VeryGoodOutro.tscn"
+		6:
+			return "res://Outro/GoodOutro.tscn"
+		5:
+			return "res://Outro/GoodOutro.tscn"
+		4:
+			return "res://Outro/GoodOutro.tscn"
+		3:
+			return "res://Outro/BadOutro.tscn"
+		2:
+			return "res://Outro/BadOutro.tscn"
+		1:
+			return "res://Outro/VeryBadOutro.tscn"
+		0:
+			return "res://Outro/VeryBadOutro.tscn"
+	
 	return "res://MainMenu/MainMenu.tscn"
 
 
