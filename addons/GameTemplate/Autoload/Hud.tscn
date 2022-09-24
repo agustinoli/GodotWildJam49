@@ -5,7 +5,6 @@
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node
 
-onready var inestability: = $CanvasLayer/GUI/MarginContainer/VBoxContainer/Top/Inestability
 onready var time_left: = $CanvasLayer/GUI/MarginContainer/VBoxContainer/Top/TimeLeft
 onready var gui: = $CanvasLayer/GUI
 
@@ -17,7 +16,6 @@ var visible: = false setget set_visible
 func _ready()->void:
 	gui.visible = visible
 	set_timer(\"5:00\")
-	set_inestability(\"0%\")
 
 func set_visible(value: bool)->void:
 	visible = value
@@ -26,9 +24,6 @@ func set_visible(value: bool)->void:
 func set_timer(t_left : String):
 	time_left.set_text(tr(time_str)+\": \"+t_left)
 
-
-func set_inestability(new_value: String):
-	inestability.set_text(tr(inestability_str)+\": \"+new_value)
 "
 
 [node name="Hud" type="Node"]
@@ -66,16 +61,14 @@ margin_right = 312.0
 margin_bottom = 34.0
 mouse_filter = 2
 
-[node name="Inestability" type="Label" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer/Top"]
-margin_right = 193.0
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer/Top"]
+margin_right = 190.0
 margin_bottom = 34.0
-size_flags_horizontal = 3
-custom_fonts/font = ExtResource( 1 )
-text = "HP: 3"
+rect_min_size = Vector2( 190, 0 )
 
 [node name="TimeLeft" type="Label" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer/Top"]
-margin_left = 197.0
-margin_right = 312.0
+margin_left = 194.0
+margin_right = 309.0
 margin_bottom = 34.0
 custom_fonts/font = ExtResource( 1 )
 text = "Score: 0000"
