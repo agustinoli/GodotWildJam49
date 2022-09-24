@@ -1,6 +1,5 @@
 extends Node2D
 
-onready var message_index = 0
 onready var hold = false
 var timer
 
@@ -30,10 +29,10 @@ func init():
 
 func next():
 	self.get_parent().log_active = true
-	message_index += 1
-	SfxManager.play("Piece"+str(message_index))
+	Game.picked_logs += 1
+	SfxManager.play("Piece"+str(Game.picked_logs))
 	hold = true
-	find_node("Message").text = tr(str("LOG-", message_index))
+	find_node("Message").text = tr(str("LOG-", Game.picked_logs))
 	find_node("Title").text = tr("LOG-TITLE")
 	self.visible = true
 	Hud.set_visible(false)
