@@ -6,7 +6,7 @@ func _ready()->void:
 	Hud.visible = true
 	PauseMenu.can_show = true	
 	var t_shake 	= GlobalTimer.add_timeout(self,"activate_shake",1,false)
-	var t_blackout 	= GlobalTimer.add_timeout(self,"activate_blackout",1,true)
+	var t_blackout 	= GlobalTimer.add_timeout(self,"activate_blackout",1,false)
 	var t_switch 	= GlobalTimer.add_timeout(self,"activate_switch",1,false)
 	Music.play("res://Assets/Music/Gameplay.ogg")
 

@@ -32,11 +32,13 @@ func physics_update(_delta: float) -> void:
 func enter(_msg := {}) -> void:
 	animationSprite.play("Attack")
 	animationSprite.set_speed_scale(attack_anim_speed)
-	bee.get_tween().interpolate_property(bee, "rotation",
-		bee.get_rotation(),bee.get_angle_to(player.get_position()) - PI/2, 0.05,
+	rotate_to_player()
+
+func rotate_to_player():
+	bee.get_tween().interpolate_property(bee.sting, "rotation",
+	bee.get_rotation(),bee.get_angle_to(player.get_position()) - PI/2, 0.05,
 		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	bee.get_tween().start()
-
 
 # Virtual function. Called by the state machine before changing the active state. Use this function
 # to clean up the state.
@@ -50,12 +52,12 @@ func _on_AttackArea_body_entered(body):
 
 
 func _on_AnimatedSprite_frame_changed():
-	if animationSprite.get_animation() == "Attack" && animationSprite.get_frame() == 5:
+	if animationSprite.get_animation() == "Attack" && animationSprite.get_frame() == 5:		
+			rotate_to_player()
 			var sting = stingScene.instance()
 			sting.set_position(bee.get_sting_position().get_global_position())
-			sting.set_rotation(bee.get_rotation()) 
+			sting.set_rotation(bee.sting.get_rotation()) 
 			self.get_tree().get_current_scene().add_child( sting )
-			look_at(player.get_position())
 
 
 func _on_AttackArea_body_exited(body):

@@ -61,7 +61,7 @@ func _process(_delta):
 
 func blackout():
 	var tween = create_tween()
-	tween.tween_property($Camera2D/CanvasModulate, "color", Color(0,1,1,1),2)
+	tween.tween_property($Camera2D/CanvasModulate, "color", Color(0.25,0.25,0.25,1),2)
 	GlobalTimer.add_timeout(self,"_on_blackout_timeout",3)
 
 
@@ -91,4 +91,4 @@ func next_log():
 
 
 func recieve_hit():
-	print("auch! maybe add some inestability")
+	get_parent().activate_switch()
