@@ -41,9 +41,6 @@ layer = 10
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/GUI"]
 anchor_right = 1.0
@@ -66,6 +63,7 @@ mouse_filter = 2
 
 [node name="Top" type="HBoxContainer" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer"]
 margin_right = 312.0
+margin_bottom = 34.0
 mouse_filter = 2
 
 [node name="Inestability" type="Label" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer/Top"]

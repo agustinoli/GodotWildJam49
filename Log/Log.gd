@@ -14,6 +14,7 @@ func _input(event):
 	if not hold and event.is_pressed():
 		self.visible = false
 		self.get_parent().log_active = false
+		Hud.set_visible(true)
 		find_node("Exit").text = ""
 
 
@@ -24,6 +25,7 @@ func init():
 	find_node("Title").text = tr("LOG-INIT-TITLE")
 	self.visible = true
 	GlobalTimer.start_timeout(timer)
+	Hud.set_visible(false)
 
 
 func next():
@@ -34,6 +36,7 @@ func next():
 	find_node("Message").text = tr(str("LOG-", message_index))
 	find_node("Title").text = tr("LOG-TITLE")
 	self.visible = true
+	Hud.set_visible(false)
 	GlobalTimer.start_timeout(timer)
 
 
