@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/Images/Tiles/FloorTiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://RobotPart/RobotPart.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Assets/Background/background.jpg" type="Texture" id=6]
 [ext_resource path="res://Star/Star.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Bee/Bee.tscn" type="PackedScene" id=8]
 
 [node name="Level" type="Node2D"]
 script = ExtResource( 4 )
@@ -197,3 +198,35 @@ position = Vector2( 2184, 2251 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2005, 2260 )
+
+[node name="Cactus" type="Node" parent="."]
+
+[node name="Bee" parent="Cactus" instance=ExtResource( 8 )]
+position = Vector2( 2546, 1985 )
+
+[node name="Bee2" parent="Cactus" instance=ExtResource( 8 )]
+position = Vector2( 3206, 1689 )
+
+[node name="Bee3" parent="Cactus" instance=ExtResource( 8 )]
+position = Vector2( 2156, 1530 )
+
+[node name="Bee4" parent="Cactus" instance=ExtResource( 8 )]
+position = Vector2( 2894, 1356 )
+
+[node name="Bee5" parent="Cactus" instance=ExtResource( 8 )]
+position = Vector2( 4172, 1343 )
+
+[node name="Bee6" parent="Cactus" instance=ExtResource( 8 )]
+position = Vector2( 4584, 1911 )
+
+[node name="Bee7" parent="Cactus" instance=ExtResource( 8 )]
+position = Vector2( 4622, 2655 )
+
+[node name="Bee8" parent="Cactus" instance=ExtResource( 8 )]
+position = Vector2( 4273, 3123 )
+
+[node name="Bee9" parent="Cactus" instance=ExtResource( 8 )]
+position = Vector2( 3359, 2613 )
+
+[node name="Bee10" parent="Cactus" instance=ExtResource( 8 )]
+position = Vector2( 3309, 2223 )
