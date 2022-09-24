@@ -66,7 +66,6 @@ mouse_filter = 2
 
 [node name="Top" type="HBoxContainer" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer"]
 margin_right = 312.0
-margin_bottom = 34.0
 mouse_filter = 2
 
 [node name="Inestability" type="Label" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer/Top"]

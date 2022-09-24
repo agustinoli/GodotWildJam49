@@ -11,6 +11,7 @@ func _ready()->void:
 	var t_shake 	= GlobalTimer.add_timeout(self,"activate_shake",1,false)
 	var t_blackout 	= GlobalTimer.add_timeout(self,"activate_blackout",1,true)
 	var t_switch 	= GlobalTimer.add_timeout(self,"activate_switch",1,false)
+	Music.play("res://Assets/Music/Gameplay.ogg")
 
 func _exit_tree()->void:
 	Hud.visible = false
@@ -22,18 +23,18 @@ func _process(_delta):
 
 func activate_shake():
 	GlobalTimer.add_timeout(self,"activate_shake",rand_range(1,10),true)
-	print("shake: ",OS.get_time())
 
 
 func activate_blackout():
 	GlobalTimer.add_timeout(self,"activate_blackout",rand_range(1,10),true)
 	$Player.blackout()
-	print("blackout: ",OS.get_time())
+	SfxManager.play("Blind")
 
 
 func activate_switch():
 	GlobalTimer.add_timeout(self,"activate_switch",rand_range(1,10),true)
-	print("switch: ",OS.get_time())
+  Game.switched = !Game.switched
+	SfxManager.play("SwitchControls")	
 
 
 func time_over():	
@@ -44,3 +45,7 @@ func select_ending()-> String:
 #	Calculates proper ending given the parameters 
 #	and returns the string to the packedscene
 	return "res://MainMenu/MainMenu.tscn"
+
+
+func part_picked():
+	$Player.next_log()

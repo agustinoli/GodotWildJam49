@@ -14,6 +14,8 @@ var facing = Vector2() setget set_facing, get_facing
 
 var collision
 
+onready var log_active = false
+
 func get_camera():
 	return $Camera2D
 
@@ -43,7 +45,7 @@ func get_animationSprite () -> Node:
 
 
 func _ready():
-	pass
+	find_node("Log").init()
 
 
 func _process(_delta):
@@ -75,3 +77,10 @@ func set_recursive_process_input(state : bool):
 
 func parse_input():
 	pass
+
+
+func get_audio_stream():
+	return $AudioStreamPlayer
+
+func next_log():
+	$Log.next()

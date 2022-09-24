@@ -30,6 +30,7 @@ func show_pause_menu(value:bool)->void:
 		return
 	MenuEvent.Paused = value
 	$Control.visible = value
+	Music.play("res://Assets/Music/Menu.ogg")
 	if value:
 		get_tree().get_nodes_in_group("Pause")[0].grab_focus()
 
@@ -40,6 +41,7 @@ func _on_Resume_pressed()->void:
 
 func _on_Restart_pressed()->void:
 	Game.emit_signal("Restart")
+	Music.play("res://Assets/Music/Gameplay.ogg")
 	show_pause_menu(false)
 
 func _on_Options_pressed()->void:

@@ -29,6 +29,9 @@ func fsm_update(_delta: float) -> void:
 
 # Virtual function. Corresponds to the `_physics_process()` callback.
 func physics_update(_delta: float) -> void:
+	if player.log_active:
+		return
+		
 	var move_direction = Vector2()
 
 	var LEFT = Input.is_action_pressed("Left")
@@ -67,11 +70,13 @@ func direction2str(direction):
 # Virtual function. Called by the state machine upon changing the active state. The `msg` parameter
 # is a dictionary with arbitrary data the state can use to initialize itself.
 func enter(_msg := {}) -> void:
-	timer.set_paused(false)
+	timer.set_paused(false)	
+	player.get_audio_stream().play()
 
 # Virtual function. Called by the state machine before changing the active state. Use this function
 # to clean up the state.
 func exit() -> void:
-	timer.set_paused(true)
+	timer.set_paused(true)	
+	player.get_audio_stream().stop()
 
 
