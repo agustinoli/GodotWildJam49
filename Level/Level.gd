@@ -1,10 +1,11 @@
 extends Node2D
 
 export (String, FILE, "*.tscn") var Next_Scene: String
+const PLAY_TIME = 240
 var timer
-
+ 
 func _ready()->void:
-	timer = GlobalTimer.add_timeout(self,"time_over",120)
+	timer = GlobalTimer.add_timeout(self,"time_over", PLAY_TIME)
 	Hud.set_timer(str(int(timer.get_time_left())))
 	Hud.set_visible(false)
 	PauseMenu.can_show = true	
@@ -28,7 +29,7 @@ func activate_shake():
 
 func activate_blackout():
 	GlobalTimer.add_timeout(self,"activate_blackout",rand_range(1,10),true)
-	$Player.blackout()
+	find_node("Player").blackout()
 	SfxManager.play("Blind")
 
 
@@ -65,4 +66,4 @@ func select_ending()-> String:
 
 
 func part_picked():
-	$Player.next_log()
+	find_node("Player").next_log()

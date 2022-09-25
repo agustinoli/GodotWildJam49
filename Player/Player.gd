@@ -80,4 +80,4 @@ func next_log():
 
 
 func recieve_hit():
-	get_parent().activate_switch()
+	get_parent().get_parent().activate_switch()
