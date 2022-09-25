@@ -7,6 +7,8 @@ var timer
 var badness
 
 func _ready():
+	var music_path = str("res://Assets/Music/", self.get_name(), ".ogg")
+	Music.play(music_path)
 	timer = GlobalTimer.add_timeout(self, "next_msg", 10, true, false)
 	
 	match self.get_name():
@@ -38,6 +40,7 @@ func next_msg():
 	if trans_key == trans_val:
 		GlobalTimer.delete_timeout(timer)
 		Game.emit_signal("ChangeScene",next_scene)
+		Music.play("res://Assets/Music/Menu.ogg")
 		return true
 	else:
 		find_node("Message").text = trans_val

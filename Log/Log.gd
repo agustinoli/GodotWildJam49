@@ -15,6 +15,9 @@ func _input(event):
 		self.get_parent().log_active = false
 		Hud.set_visible(true)
 		find_node("Exit").text = ""
+		
+		if Game.picked_logs == 7:
+			get_parent().get_parent().get_parent().time_over()
 
 
 func init():

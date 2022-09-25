@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://addons/GameTemplate/SplashScreen/SplashScreen.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Images/Logo/LogoSprite.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Background/background.jpg" type="Texture" id=3]
 
 [node name="SplashScreen" type="Node2D"]
@@ -15,9 +15,9 @@ margin_bottom = 40.0
 texture = ExtResource( 3 )
 
 [node name="Logo" type="TextureRect" parent="TextureRect"]
-margin_left = 110.0
-margin_top = 40.0
-margin_right = 210.0
-margin_bottom = 140.0
+margin_left = 29.0
+margin_top = 23.0
+margin_right = 285.0
+margin_bottom = 151.0
 texture = ExtResource( 2 )
 expand = true

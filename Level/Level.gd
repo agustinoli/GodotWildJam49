@@ -40,6 +40,7 @@ func activate_switch():
 
 
 func time_over():
+	GlobalTimer.stop_timeout(timer)
 	Game.emit_signal("ChangeScene",select_ending())
 
 
@@ -67,3 +68,4 @@ func select_ending()-> String:
 
 func part_picked():
 	find_node("Player").next_log()
+	
