@@ -48,17 +48,6 @@ func _ready():
 	find_node("Log").init()
 
 
-func _process(_delta):
-	if Input.is_action_just_released("zoom_in"):
-		var p_zoom = $Camera2D.get_zoom().x+0.1
-		p_zoom = clamp(p_zoom, MIN_ZOOM, MAX_ZOOM)
-		$Camera2D.set_zoom(Vector2(p_zoom,p_zoom))
-	elif Input.is_action_just_released("zoom_out"):
-		var p_zoom = $Camera2D.get_zoom().x-0.1
-		p_zoom = clamp(p_zoom, MIN_ZOOM, MAX_ZOOM)
-		$Camera2D.set_zoom(Vector2(p_zoom,p_zoom))
-
-
 func blackout():
 	var tween = create_tween()
 	tween.tween_property($Camera2D/CanvasModulate, "color", Color(0.25,0.25,0.25,1),2)
