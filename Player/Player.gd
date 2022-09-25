@@ -48,25 +48,16 @@ func _ready():
 	find_node("Log").init()
 
 
-func _process(_delta):
-	if Input.is_action_just_released("zoom_in"):
-		var p_zoom = $Camera2D.get_zoom().x+0.1
-		p_zoom = clamp(p_zoom, MIN_ZOOM, MAX_ZOOM)
-		$Camera2D.set_zoom(Vector2(p_zoom,p_zoom))
-	elif Input.is_action_just_released("zoom_out"):
-		var p_zoom = $Camera2D.get_zoom().x-0.1
-		p_zoom = clamp(p_zoom, MIN_ZOOM, MAX_ZOOM)
-		$Camera2D.set_zoom(Vector2(p_zoom,p_zoom))
-
-
 func blackout():
 	var tween = create_tween()
-	tween.tween_property($Camera2D/CanvasModulate, "color", Color(0,1,1,1),2)
+	tween.tween_property($Camera2D/CanvasModulate, "color", Color(0.25,0.25,0.25,1),2)
 	GlobalTimer.add_timeout(self,"_on_blackout_timeout",3)
+
 
 func _on_blackout_timeout():
 	var tween = create_tween()
 	tween.tween_property($Camera2D/CanvasModulate, "color", Color(1,1,1,1),2)
+
 
 func set_recursive_process_input(state : bool):
 	self.set_physics_process(state)
@@ -75,6 +66,7 @@ func set_recursive_process_input(state : bool):
 	$StateMachine/Idle.set_physics_process(state)
 	$StateMachine/Move.set_physics_process(state)
 
+
 func parse_input():
 	pass
 
@@ -82,5 +74,10 @@ func parse_input():
 func get_audio_stream():
 	return $AudioStreamPlayer
 
+
 func next_log():
 	$Log.next()
+
+
+func recieve_hit():
+	get_parent().get_parent().activate_switch()

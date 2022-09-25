@@ -17,6 +17,8 @@ onready var pacific_mode = false
 onready var gore_enabled = true
 onready var switched : bool
 
+onready var picked_logs = 0
+
 func _ready()->void:
 	switched = false
 	connect("Exit",			self, "on_Exit")

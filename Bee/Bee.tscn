@@ -1,0 +1,156 @@
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://Bee/Idle (36x34).png" type="Texture" id=1]
+[ext_resource path="res://Bee/IdleBee.gd" type="Script" id=2]
+[ext_resource path="res://fsm/stateMachine.gd" type="Script" id=4]
+[ext_resource path="res://Bee/Bee.gd" type="Script" id=5]
+[ext_resource path="res://Bee/Hit (36x34).png" type="Texture" id=6]
+[ext_resource path="res://Bee/Attack (36x34).png" type="Texture" id=7]
+[ext_resource path="res://Bee/AttackBee.gd" type="Script" id=8]
+[ext_resource path="res://Bee/HitBee.gd" type="Script" id=9]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 9.5, 12.25 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 7 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 7 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 7 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 7 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 7 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 7 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 7 )
+region = Rect2( 224, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 6 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 6 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 6 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 6 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 1 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=38]
+atlas = ExtResource( 1 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 1 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=40]
+atlas = ExtResource( 1 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 1 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ) ],
+"loop": true,
+"name": "Hit",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=22]
+radius = 100.001
+
+[node name="Bee" type="KinematicBody2D"]
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.5, 0.25 )
+shape = SubResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Idle"
+frame = 2
+playing = true
+
+[node name="StateMachine" type="Node2D" parent="."]
+script = ExtResource( 4 )
+initial_state = NodePath("Idle")
+
+[node name="Idle" type="Node2D" parent="StateMachine"]
+script = ExtResource( 2 )
+
+[node name="Hit" type="Node2D" parent="StateMachine"]
+script = ExtResource( 9 )
+
+[node name="Attack" type="Node2D" parent="StateMachine"]
+script = ExtResource( 8 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="AttackArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+modulate = Color( 100, 0, 0, 1 )
+shape = SubResource( 22 )
+
+[node name="Stinger" type="Node2D" parent="."]
+
+[node name="StingPosition" type="Position2D" parent="Stinger"]
+position = Vector2( 0, 5 )
+
+[connection signal="frame_changed" from="AnimatedSprite" to="StateMachine/Attack" method="_on_AnimatedSprite_frame_changed"]
+[connection signal="body_entered" from="AttackArea" to="StateMachine/Attack" method="_on_AttackArea_body_entered"]
+[connection signal="body_exited" from="AttackArea" to="StateMachine/Attack" method="_on_AttackArea_body_exited"]

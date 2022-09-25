@@ -1,6 +1,5 @@
 extends Node2D
 
-onready var message_index = 0
 onready var hold = false
 var timer
 
@@ -14,7 +13,11 @@ func _input(event):
 	if not hold and event.is_pressed():
 		self.visible = false
 		self.get_parent().log_active = false
+		Hud.set_visible(true)
 		find_node("Exit").text = ""
+		
+		if Game.picked_logs == 7:
+			get_parent().get_parent().get_parent().time_over()
 
 
 func init():
@@ -24,16 +27,19 @@ func init():
 	find_node("Title").text = tr("LOG-INIT-TITLE")
 	self.visible = true
 	GlobalTimer.start_timeout(timer)
+	Hud.set_visible(false)
 
 
 func next():
 	self.get_parent().log_active = true
-	message_index += 1
-	SfxManager.play("Piece"+str(message_index))
+	Game.picked_logs += 1
+	Hud.set_parts(Game.picked_logs)
+	SfxManager.play("Piece"+str(Game.picked_logs))
 	hold = true
-	find_node("Message").text = tr(str("LOG-", message_index))
+	find_node("Message").text = tr(str("LOG-", Game.picked_logs))
 	find_node("Title").text = tr("LOG-TITLE")
 	self.visible = true
+	Hud.set_visible(false)
 	GlobalTimer.start_timeout(timer)
 
 

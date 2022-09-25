@@ -1,0 +1,53 @@
+[gd_resource type="TileSet" load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Images/Tiles/Props.png" type="Texture" id=1]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 10.2304, 52.2194, 13.724, 49.532, 17.755, 51.6819, 13.1865, 54.3693 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 14.3163, 38.5631, 10.0165, 37.4881, 13.5101, 35.0695, 18.0786, 35.8757 )
+
+[resource]
+0/name = "Props.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 2, -45 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 1, 70, 30, 55 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "Props.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 3, -30 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 34, 85, 28, 40 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 2 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0

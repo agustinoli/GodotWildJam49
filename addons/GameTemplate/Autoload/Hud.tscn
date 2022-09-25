@@ -5,18 +5,31 @@
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node
 
-onready var hp: = $CanvasLayer/GUI/MarginContainer/VBoxContainer/Top/HP
-onready var score: = $CanvasLayer/GUI/MarginContainer/VBoxContainer/Top/Score
+onready var time_left: = $CanvasLayer/GUI/MarginContainer/VBoxContainer/Top/TimeLeft
 onready var gui: = $CanvasLayer/GUI
+
+var time_str = \"TIME\"
+var inestability_str = \"INESTABILITY\"
 
 var visible: = false setget set_visible
 
 func _ready()->void:
 	gui.visible = visible
+	set_timer(\"5:00\")
+	set_parts(0)
+
 
 func set_visible(value: bool)->void:
 	visible = value
 	gui.visible = value
+
+
+func set_timer(t_left : String):
+	time_left.set_text(tr(time_str)+\": \"+t_left)
+
+
+func set_parts(parts):
+	find_node(\"Parts\").text = str(tr(\"PARTS\"), \": \", parts, \"/7\")
 "
 
 [node name="Hud" type="Node"]
@@ -29,9 +42,6 @@ layer = 10
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/GUI"]
 anchor_right = 1.0
@@ -54,20 +64,21 @@ mouse_filter = 2
 
 [node name="Top" type="HBoxContainer" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer"]
 margin_right = 312.0
+margin_bottom = 34.0
 mouse_filter = 2
 
-[node name="HP" type="Label" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer/Top"]
-visible = false
-margin_right = 193.0
+[node name="Parts" type="Label" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer/Top"]
+margin_right = 220.0
 margin_bottom = 34.0
-size_flags_horizontal = 3
+rect_min_size = Vector2( 220, 0 )
 custom_fonts/font = ExtResource( 1 )
-text = "HP: 3"
+text = "Parts"
+autowrap = true
 
-[node name="Score" type="Label" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer/Top"]
-visible = false
-margin_right = 115.0
+[node name="TimeLeft" type="Label" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer/Top"]
+margin_left = 224.0
+margin_right = 312.0
 margin_bottom = 34.0
 custom_fonts/font = ExtResource( 1 )
-text = "Score: 0000"
+text = "Time: 120"
 align = 2
