@@ -16,14 +16,20 @@ var visible: = false setget set_visible
 func _ready()->void:
 	gui.visible = visible
 	set_timer(\"5:00\")
+	set_parts(0)
+
 
 func set_visible(value: bool)->void:
 	visible = value
 	gui.visible = value
 
+
 func set_timer(t_left : String):
 	time_left.set_text(tr(time_str)+\": \"+t_left)
 
+
+func set_parts(parts):
+	find_node(\"Parts\").text = str(tr(\"PARTS\"), \": \", parts, \"/7\")
 "
 
 [node name="Hud" type="Node"]
@@ -61,15 +67,18 @@ margin_right = 312.0
 margin_bottom = 34.0
 mouse_filter = 2
 
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer/Top"]
-margin_right = 190.0
+[node name="Parts" type="Label" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer/Top"]
+margin_right = 220.0
 margin_bottom = 34.0
-rect_min_size = Vector2( 190, 0 )
+rect_min_size = Vector2( 220, 0 )
+custom_fonts/font = ExtResource( 1 )
+text = "Parts"
+autowrap = true
 
 [node name="TimeLeft" type="Label" parent="CanvasLayer/GUI/MarginContainer/VBoxContainer/Top"]
-margin_left = 194.0
-margin_right = 309.0
+margin_left = 224.0
+margin_right = 312.0
 margin_bottom = 34.0
 custom_fonts/font = ExtResource( 1 )
-text = "Score: 0000"
+text = "Time: 120"
 align = 2

@@ -30,6 +30,7 @@ func init():
 func next():
 	self.get_parent().log_active = true
 	Game.picked_logs += 1
+	Hud.set_parts(Game.picked_logs)
 	SfxManager.play("Piece"+str(Game.picked_logs))
 	hold = true
 	find_node("Message").text = tr(str("LOG-", Game.picked_logs))
