@@ -63,7 +63,7 @@ INTRO-1,"Back in 2022 year, B.O.B. the robot was sent to the Moon with the purpo
 INTRO-2,"The information that B.O.B. had gathered is crutial to know humanity's chances of being established in the Moon, due to the inminent end of our planet, the Earth.","La información que B.O.B. pudo conseguir es crucial para saber las chances de la humanidad de establecerse en la Luna debido al poco tiempo que le queda a la Tierra."
 INTRO-3,"That's why the robot L.A.R.R.Y. is being sent to save B.O.B. or, at least, it's information...","Es por ello que L.A.R.R.Y. fue desplegado para encontrar a B.O.B. o por lo menos lo que sabía…"
 PRESS,Press,Presiona
-TASK_BLUE_SCREEN,"Enter the following code:","Ingresa el siguiente código:"
+TASK_BLUE_SCREEN,"An internal error has occured in L.A.R.R.Y.! Enter the following code to fix it:","Ha ocurrido un error interno en L.A.R.R.Y.! Ingresa el siguiente código para arreglarlo:"
 LOG-TITLE,"You've found a log record from B.O.B !","Has encontrado un archivo de B.O.B !"
 LOG-EXIT,"Press any key...","Presiona cualquier tecla..."
 LOG-INIT,"Target: localize and recover B.O.B.'s parts as much as possible. Limitation: There's not enough fuel. In five minutes, our spaceship will come back for L.A.R.R.Y. Good luck.","Objetivo: localizar y recuperarla mayor cantidad de piezas de B.O.B. posibles. Limitación: No hay suficiente combustible. En 5 minutos la nave recuperará a L.A.R.R.Y con todo lo que haya obtenido. Buena suerte."

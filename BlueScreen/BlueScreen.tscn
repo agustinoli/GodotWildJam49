@@ -25,17 +25,18 @@ custom_fonts/font = ExtResource( 4 )
 align = 1
 
 [node name="Prompt" type="Label" parent="."]
-margin_left = 68.0
+margin_left = 55.0
 margin_top = 29.0
-margin_right = 146.0
-margin_bottom = 47.0
+margin_right = 270.0
+margin_bottom = 61.0
 text = "TASK_BLUE_SCREEN"
+autowrap = true
 
 [node name="Target" type="Label" parent="."]
 margin_left = 111.0
-margin_top = 49.0
+margin_top = 70.0
 margin_right = 186.0
-margin_bottom = 67.0
+margin_bottom = 88.0
 
 [node name="CRT" type="ColorRect" parent="."]
 material = ExtResource( 2 )
